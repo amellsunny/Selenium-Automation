@@ -1,112 +1,110 @@
-# T-Mobile Website UI Testing: Test Plan
-
-## Project Overview
-This project aims to validate the UI elements and core functionality of the T-Mobile website using Selenium WebDriver in Java. 
-The focus is on testing crucial site sections (Home, Shop, Deals, Support, Account, and Footer) to ensure a smooth user experience and functional interactions. 
-The automation will be implemented with TestNG and Maven to enable continuous integration and reliable testing.
-
-
-## 1. Test Plan Details
-- **Project Name**: T-Mobile Website UI Test Automation
-- **Prepared by**: Amal Sunny
-- **Date**: 06 January 2024
-- **Tools and Technologies**: Selenium WebDriver, TestNG, Java, Maven, ChromeDriver, GitHub for version control
+# T-Mobile Website UI Testing Plan
 
 
 
-## 2. Scope of Testing
-This test plan addresses functional UI testing for several critical website sections:
-- **Home Page**: Testing navigation, banners, and search bar.
-- **Shop Page**: Testing product filters, categories, and product details.
-- **Deals Page**: Validating promotions and deal categories.
-- **Support Page**: Verifying FAQ, Contact Us, and Chat Support options.
-- **Account Page**: Testing login, account display, and logout.
-- **Footer**: Checking social media, legal links, and newsletter subscription.
+## Objective
+
+The objective of this test plan is to validate T-Mobile's website functionality and UI consistency using Selenium WebDriver in Java. 
+Automated tests focus on the critical areas (Home, Shop, Deals, Support, Account, and Footer) to ensure smooth navigation, functional filters, account handling, and footer element interactions, ultimately promoting a user-friendly experience.
 
 
-## 3. Test Objectives
-Key objectives include:
-- **Ensuring** that navigation between main pages is seamless.
-- **Verifying** essential UI components like banners, links, and search bars function correctly.
-- **Validating** product filters and search functionality.
-- **Confirming** support and account access work as intended.
-- **Ensuring** footer links redirect accurately.
--
 
-## 4. Test Cases Overview
-A summary of test cases for each section:
+## Scope
 
-### HomePageTests
-1. Verify that the main banner loads correctly.
-2. Check navigation links (Shop, Deals, Support).
-3. Validate search functionality.
-4. Ensure footer links are accessible and correctly redirect.
+### Inclusions
 
-### ShopPageTests
-1. Confirm Shop page filters display as expected.
-2. Test category filtering (e.g., Phones).
-3. Verify product detail page access.
-4. Validate Add to Cart functionality.
+This plan includes testing the following main sections and functions:
 
-### DealsPageTests
-1. Ensure deals are visible.
-2. Test category filtering on deals (e.g., Phones).
-3. Verify accessibility of promotional deals.
-4. Check navigation back to the homepage.
+- **Pages**: Home, Shop, Deals, Support, Account, Footer
+- **Functionality**: Navigation, search, filtering, login/logout, footer links, and social media redirects
 
-### SupportPageTests
-1. Test Support page and main section visibility.
-2. Access FAQ page.
-3. Verify Contact Us button.
-4. Confirm chat support availability.
+### Exclusions
 
-### AccountPageTests
-1. Test login with valid credentials.
-2. Verify login error with invalid credentials.
-3. Confirm account information display.
-4. Test logout functionality.
-
-### FooterTests
-1. Check social media links are clickable.
-2. Verify legal links (Privacy Policy, Terms).
-3. Test newsletter subscription.
+Non-essential pages or features not affecting the core site usability (e.g., internal tools or support widgets).
 
 
-## 5. Test Execution Strategy
-### Environment
-Tests will be executed using the Chrome browser to match user experience on popular web environments.
+## Test Environments
 
-### Execution Order
-The order of test execution will follow the structure:
-1. Homepage
-2. Shop
-3. Deals
-4. Support
-5. Account
-6. Footer
+Testing will be conducted on Google Chrome on desktop environments, with potential future expansion to additional browsers or devices.
 
-### Automation
-Tests will be automated using Selenium WebDriver with TestNG for structured assertions, allowing detailed reports and better integration with CI/CD pipelines.
+- **Browsers**: Google Chrome (latest version)
+- **Operating Systems**: Windows 10
 
 
-## 6. Test Entry and Exit Criteria
+
+## Defect Reporting Procedure
+
+Defects will be documented in GitHub Issues (or Jira), with detailed reproduction steps and categories (e.g., UI, functionality). They will be prioritized by impact and severity, with regular updates shared with stakeholders.
+
+
+
+## Test Strategy
+
+### Approach
+
+- **Test Design Techniques**: Employing Boundary Value Analysis, Equivalence Partitioning, and exploratory testing to ensure thorough coverage.
+- **Execution**: Full test execution for every stable build, with defect review and re-testing as needed.
+
+### Testing Types
+
+1. **Functional Testing**: To validate key features.
+2. **Regression Testing**: Ensuring fixes don’t impact existing functionality.
+3. **Cross-Browser Testing**: Focusing initially on Chrome.
+
+
+
+## Test Schedule
+
+### Tasks
+
+- **Test Plan Creation**: 1 week
+- **Test Case Development**: 1-2 weeks
+- **Test Execution and Reporting**: Continuous, aligned with release cycles
+
+### Timeline
+
+Testing will proceed in bi-weekly sprints, with regular summary reports and coverage reviews.
+
+
+
+## Test Deliverables
+
+- **Test Cases**: Created using TestNG and stored in GitHub.
+- **Reports**: TestNG-generated reports providing detailed execution results.
+
+
+
+## Entry and Exit Criteria
+
 ### Entry Criteria
-- Fully configured test environment.
-- Access to the T-Mobile test URLs.
-- Completion of all test setup and preparation.
+
+- Approved setup for test environment.
+- Application accessible and ready for testing.
 
 ### Exit Criteria
-- Successful execution of all critical test cases.
-- All major issues documented.
-- Any failed tests are logged for further review and analysis.
+
+- Full test case execution.
+- All critical defects logged or resolved.
 
 
-## 7. Risks and Dependencies
-### Risks
-- UI layout changes may necessitate updates to locators and test flows.
-- Potential issues accessing third-party URLs or social media links if they change or are blocked.
 
-### Dependencies
-- Testing is limited to Chrome compatibility; additional browsers may need separate testing.
-- Some pages or links might be restricted based on user permissions or geographical restrictions.
+## Tools
+
+- **Automation**: Selenium WebDriver, TestNG, Maven
+- **Defect Tracking**: GitHub Issues or Jira
+
+
+
+## Risks and Mitigations
+
+- **Risk**: UI changes may disrupt locators.
+  - **Mitigation**: Frequent maintenance of scripts.
+- **Risk**: Browser-specific issues.
+  - **Mitigation**: Expanding testing to additional browsers as needed.
+
+
+
+## Approvals
+
+Documents (Test Plan, Test Cases, and Reports) require QA lead and project manager approval before moving forward.
 
