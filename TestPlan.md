@@ -34,7 +34,7 @@ Testing will be conducted on Google Chrome on desktop environments, with potenti
 
 ## Defect Reporting Procedure
 
-Defects will be documented in GitHub Issues (or Jira), with detailed reproduction steps and categories (e.g., UI, functionality). They will be prioritized by impact and severity, with regular updates shared with stakeholders.
+Defects will be documented in Jira, with detailed reproduction steps and categories (e.g., UI, functionality). They will be prioritized by impact and severity, with regular updates shared with stakeholders.
 
 
 
@@ -91,7 +91,7 @@ Testing will proceed in bi-weekly sprints, with regular summary reports and cove
 ## Tools
 
 - **Automation**: Selenium WebDriver, TestNG, Maven
-- **Defect Tracking**: GitHub Issues or Jira
+- **Defect Tracking**: Jira
 
 
 
