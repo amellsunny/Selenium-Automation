@@ -1,4 +1,4 @@
-# Selenium Automation Cheat Sheet
+# Selenium Automation Cheat Sheet (Python)
 
 ## Table of Contents
 1. [Setting Up Selenium](#1-setting-up-selenium)
