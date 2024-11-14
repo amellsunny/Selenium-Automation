@@ -1,13 +1,13 @@
 # Selenium Automation Cheat Sheet
 
 ## Table of Contents
-1. [Setting Up Selenium](#setting-up-selenium)
-2. [Locating Elements](#locating-elements)
-3. [Element Interactions](#element-interactions)
-4. [Assertions](#assertions)
-5. [Waiting for Elements](#waiting-for-elements)
-6. [Browser Management](#browser-management)
-7. [Common Actions](#common-actions)
+1. [Setting Up Selenium](#1.-setting-up-selenium)
+2. [Locating Elements](#2.-locating-elements)
+3. [Element Interactions](3.-#element-interactions)
+4. [Assertions](#4.-assertions)
+5. [Waiting for Elements](#5.-waiting-for-elements)
+6. [Browser Management](#6.-browser-management)
+7. [Common Actions](#7.-common-actions)
 
 ---
 
@@ -16,10 +16,15 @@
 ### Install Selenium
 
 from selenium import webdriver
+
 from selenium.webdriver.common.by import By
+
 from selenium.webdriver.common.keys import Keys
+
 from selenium.webdriver.support.ui import WebDriverWait
+
 from selenium.webdriver.support import expected_conditions as EC
+
 
 ## 2. Locating Elements
 
