@@ -1,16 +1,16 @@
 # TestNG Cheat Sheet
 
 ## Table of Contents
-1. [Setting Up TestNG](#setting-up-testng)
-2. [TestNG Annotations](#testng-annotations)
-3. [TestNG Configuration Annotations](#testng-configuration-annotations)
-4. [Assertions](#assertions)
-5. [Grouping Tests](#grouping-tests)
-6. [Parameterization](#parameterization)
-7. [TestNG XML Configuration](#testng-xml-configuration)
-8. [DataProvider (Data-Driven Testing)](#dataprovider-data-driven-testing)
-9. [Dependency Testing](#dependency-testing)
-10. [TestNG Reports](#testng-reports)
+1. [Setting Up TestNG](#1-setting-up-testng)
+2. [TestNG Annotations](#2-testng-annotations)
+3. [TestNG Configuration Annotations](#3-testng-configuration-annotations)
+4. [Assertions](#4-assertions)
+5. [Grouping Tests](#5-grouping-tests)
+6. [Parameterization](#6-parameterization)
+7. [TestNG XML Configuration](#7-testng-xml-configuration)
+8. [DataProvider (Data-Driven Testing)](#8-dataprovider-data-driven-testing)
+9. [Dependency Testing](#9-dependency-testing)
+10. [TestNG Reports](#10-testng-reports)
 
 ---
 
