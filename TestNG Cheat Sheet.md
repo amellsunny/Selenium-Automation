@@ -190,9 +190,10 @@ Define parameters in testng.xml:
         </classes>
     </test>
 </suite>
-Define Multiple Classes
-xml
-Copy code
+```
+### Define Multiple Classes
+
+```xml
 <classes>
     <class name="com.example.FirstTestClass"/>
     <class name="com.example.SecondTestClass"/>
